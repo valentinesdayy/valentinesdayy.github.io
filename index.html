@@ -51,7 +51,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 192, 203, 0.9);
+            background: url('istockphoto-1296510458-640x640.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -75,6 +75,7 @@
     </style>
     <script>
         let noResponses = ["please?", "with a cherry on top?", "but like pleaseeeeee", "im gonna die of death 😢", "im dead oof", "PLEASEEEEEEE VIRGINIA", "I said with a cherry on toppppppppp"];
+        let noIndex = 0;
         function changeNoText() {
             document.querySelector('.no').textContent = noResponses[noIndex];
             noIndex = (noIndex + 1) % noResponses.length;
