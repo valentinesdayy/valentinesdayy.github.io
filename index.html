@@ -43,7 +43,7 @@
             border-radius: 10px;
             margin: 5px;
         }
-        .yes { background-color: red; color: white; font-size: 30px; }
+        .yes { background-color: red; color: white; font-size: 30px; transition: font-size 0.3s ease-in-out; }
         .no { background-color: gray; color: white; }
         .hooray-screen {
             position: fixed;
@@ -77,8 +77,9 @@
         let noResponses = ["Aww, maybe next year? 😢", "Are you sure? 😟", "Please reconsider! 💔", "But I got you chocolates! 🍫", "You’re breaking my heart! 💔"];
         let noIndex = 0;
         function changeNoText() {
-            alert(noResponses[noIndex]);
+            document.querySelector('.no').textContent = noResponses[noIndex];
             noIndex = (noIndex + 1) % noResponses.length;
+            document.querySelector('.yes').style.fontSize = (30 + noIndex * 5) + 'px';
         }
         function showHoorayScreen() {
             document.querySelector('.hooray-screen').classList.add('show');
