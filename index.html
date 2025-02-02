@@ -10,7 +10,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: pink;
+            background: url('istockphoto-1296510458-640x640.jpg') no-repeat center center/cover;
             font-family: Arial, sans-serif;
             text-align: center;
             overflow: hidden;
@@ -75,7 +75,6 @@
     </style>
     <script>
         let noResponses = ["please?", "with a cherry on top?", "but like pleaseeeeee", "im gonna die of death 😢", "im dead oof", "PLEASEEEEEEE VIRGINIA", "I said with a cherry on toppppppppp"];
-        let noIndex = 0;
         function changeNoText() {
             document.querySelector('.no').textContent = noResponses[noIndex];
             noIndex = (noIndex + 1) % noResponses.length;
@@ -88,7 +87,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Will You Be My Valentine? ❤️</h1>
+         <h1>will you be my valentine?</h1>
         <div class="heart">❤️</div>
         <div class="buttons">
             <button class="yes" onclick="showHoorayScreen()">Yes</button>
